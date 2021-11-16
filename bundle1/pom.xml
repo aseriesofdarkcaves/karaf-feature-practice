@@ -99,6 +99,30 @@
                 <artifactId>camel-karaf-maven-plugin</artifactId>
                 <version>${camel.version}</version>
             </plugin>
+
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>build-helper-maven-plugin</artifactId>
+                <version>3.2.0</version>
+                <executions>
+                    <execution>
+                        <id>attach-artifacts</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>attach-artifact</goal>
+                        </goals>
+                        <configuration>
+                            <artifacts>
+                                <artifact>
+                                    <file>etc/com.asodc.karaf.feature.bundle1.cfg</file>
+                                    <type>cfg</type>
+                                    <classifier>com.asodc.karaf.feature.bundle1</classifier>
+                                </artifact>
+                            </artifacts>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
         </plugins>
     </build>
 </project>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <features name="karaf-feature-practice-repo" xmlns="http://karaf.apache.org/xmlns/features/v1.4.0">
     <feature name="karaf-feature-practice" version="${project.version}">
-        <configfile finalname="/etc/com.asodc.karaf.feature.bundle1.cfg">mvn:com.asodc.karaf.feature/bundle1/${bundle1.version}/etc/com.asodc.karaf.feature.bundle1.cfg</configfile>
+        <configfile finalname="/etc/com.asodc.karaf.feature.bundle1.cfg">mvn:com.asodc.karaf.feature/bundle1/${bundle1.version}/cfg/com.asodc.karaf.feature.bundle1.cfg</configfile>
         <!-- TODO: think about whether defining required camel features would make sense here -->
         <bundle dependency="true">mvn:com.asodc.karaf.feature/bundle1/${bundle1.version}</bundle>
     </feature>

@@ -22,8 +22,9 @@ feature:repo-add mvn:com.asodc.karaf.feature/karaf-feature-practice/1.0-SNAPSHOT
 
 Install the feature:
 
-TODO: find out why the config part of the features.xml is failing 
+TODO: Find out how to properly install the feature (something isn't right). Currently this command doesn't result in
+installing the cfg or bundle from bundle1 being deployed to Karaf as defined in its features.xml...
 
 ```shell
-feature:install karaf-feature-practice 1.0-SNAPSHOT
+feature:install karaf-feature-practice
 ```
