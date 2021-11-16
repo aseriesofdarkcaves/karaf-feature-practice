@@ -1,0 +1,6 @@
+<features name="karaf-feature-practice-${project.version}" xmlns="http://karaf.apache.org/xmlns/features/v1.4.0">
+    <feature name="karaf-feature-practice" version="${project.version}">
+        <configfile finalname="/etc/com.asodc.karaf.feature.bundle1.cfg">mvn:com.asodc.karaf.feature/bundle1/${bundle1.version}/etc/com.asodc.karaf.feature.bundle1.cfg</configfile>
+        <bundle dependency="true">mvn:com.asodc.karaf.feature/bundle1/${bundle1.version}</bundle>
+    </feature>
+</features>
