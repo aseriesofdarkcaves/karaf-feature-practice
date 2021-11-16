@@ -12,8 +12,18 @@ The project doesn't use a Maven Parent POM.
 
 ## Commands
 
-In a Karaf shell (TODO: get this working, I don't know where I am going wrong here):
+In a Karaf shell:
+
+Add the feature repository using the Maven URI:
 
 ```shell
-feature:repo-add karaf-feature-practice-repo 1.0-SNAPSHOT
+feature:repo-add mvn:com.asodc.karaf.feature/karaf-feature-practice/1.0-SNAPSHOT/xml
+```
+
+Install the feature:
+
+TODO: find out why the config part of the features.xml is failing 
+
+```shell
+feature:install karaf-feature-practice 1.0-SNAPSHOT
 ```
