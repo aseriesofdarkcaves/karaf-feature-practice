@@ -20,11 +20,16 @@ Add the feature repository using the Maven URI:
 feature:repo-add mvn:com.asodc.karaf.feature/karaf-feature-practice/1.0-SNAPSHOT/xml
 ```
 
-Install the feature:
+Check that the feature repo was added:
 
-TODO: Find out how to properly install the feature (something isn't right). Currently this command doesn't result in
-installing the cfg or bundle from bundle1 being deployed to Karaf as defined in its features.xml...
+```shell
+feature:repo-list
+```
+
+Install a feature:
 
 ```shell
 feature:install karaf-feature-practice
 ```
+
+TODO: Find out how to properly install the feature (something isn't right). Issue seems to be the config
