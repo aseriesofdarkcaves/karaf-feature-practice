@@ -7,7 +7,7 @@
          http://camel.apache.org/schema/blueprint http://camel.apache.org/schema/blueprint/camel-blueprint.xsd
          http://aries.apache.org/blueprint/xmlns/blueprint-cm/v1.1.0 http://aries.apache.org/schemas/blueprint-cm/blueprint-cm-1.1.0.xsd">
 
-    <cm:property-placeholder persistent-id="com.asodc.karaf.feature.Bundle1" update-strategy="reload">
+    <cm:property-placeholder persistent-id="com.asodc.karaf.feature.bundle1" update-strategy="reload">
         <cm:default-properties>
             <cm:property name="message" value="This is Bundle1!" />
         </cm:default-properties>

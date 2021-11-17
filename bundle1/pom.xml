@@ -117,7 +117,7 @@
                                 <artifact>
                                     <file>etc/com.asodc.karaf.feature.bundle1.cfg</file>
                                     <type>cfg</type>
-<!--                                    <classifier>com.asodc.karaf.feature.bundle1</classifier>-->
+                                    <classifier>com.asodc.karaf.feature.bundle1</classifier>
                                 </artifact>
                             </artifacts>
                         </configuration>

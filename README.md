@@ -32,8 +32,30 @@ Install a feature:
 feature:install karaf-feature-practice
 ```
 
-TODO: Find out how to properly install the feature (something isn't right). Issue seems to be the config. The cfg file I
-am referring to turns out not to have been included in the bundle1 jar. Probably some issue with the
-build-helper-maven-plugin configuration. There might be some issue with the build-helper-maven-plugin not supporting JDK
-11... Messing about with the <classifier> element seems to change the name of the cfg file that gets put into the local
-repo via mvn:install...
+Check to see the log to find that the default log message has changed (because the feature deploys a cfg file)!
+
+```shell
+log:tail
+```
+
+If any changes are made to the features.xml or the bundles in the feature, you need to reinstall them to the local repo
+via mvn:install.
+
+The next few commands are useful if changes don't propagate, but I still need to work out the correct use-cases.
+
+```shell
+# refresh all repos
+feature:repo-refresh
+
+# refresh a spectific repo
+feature:repo-refresh mvn:com.asodc.karaf.feature/karaf-feature-practice/1.0-SNAPSHOT/xml
+
+# refresh features to reprovision existing features
+feature:refresh
+```
+
+Remove the feature:
+
+```shell
+feature:uninstall karaf-feature-practice
+```
