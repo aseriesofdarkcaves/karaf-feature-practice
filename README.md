@@ -32,4 +32,6 @@ Install a feature:
 feature:install karaf-feature-practice
 ```
 
-TODO: Find out how to properly install the feature (something isn't right). Issue seems to be the config
+TODO: Find out how to properly install the feature (something isn't right). Issue seems to be the config. The cfg file I
+am referring to turns out not to have been included in the bundle1 jar.
+Probably some issue with the build-helper-maven-plugin configuration.

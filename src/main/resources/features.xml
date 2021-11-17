@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <features name="${project.artifactId}-${project.version}" xmlns="http://karaf.apache.org/xmlns/features/v1.4.0">
     <feature name="karaf-feature-practice" version="${project.version}">
-        <!-- TODO: figure out how to fix the cfg file provisioning -->
+        <!-- TODO: figure out how to get the cfg into the jar, so that this can work -->
 <!--        <configfile finalname="/etc/com.asodc.karaf.feature.bundle1.cfg">mvn:com.asodc.karaf.feature/bundle1/${bundle1.version}/cfg/com.asodc.karaf.feature.bundle1.cfg</configfile>-->
         <!-- TODO: think about whether defining required camel features would make sense here -->
         <!-- adding the dependency attribute actually prevented this bundle from starting... -->
