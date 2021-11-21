@@ -1,21 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <features name="${project.artifactId}-${project.version}" xmlns="http://karaf.apache.org/xmlns/features/v1.4.0">
+    <repository>mvn:com.asodc.karaf.feature/bundle1/${bundle1.version}/xml/features</repository>
+
     <feature name="karaf-feature-practice" version="${project.version}">
         <!-- TODO: how to reference another feature file? mvn URL? So far only internal references have worked -->
         <!-- TODO: would using a feature repo be a way of linking? -->
         <!-- TODO: should version info be specified here too? -->
         <feature>bundle1</feature>
-    </feature>
-
-    <!-- this is a bit naff if the only way to chain features is internally in one file -->
-    <feature name="bundle1" version="${bundle1.version}">
-        <feature>camel-core</feature>
-        <feature>camel-blueprint</feature>
-
-        <configfile finalname="/etc/com.asodc.karaf.feature.bundle1.cfg">
-            mvn:com.asodc.karaf.feature/bundle1/${bundle1.version}/cfg/com.asodc.karaf.feature.bundle1
-        </configfile>
-
-        <bundle>mvn:com.asodc.karaf.feature/bundle1/${bundle1.version}</bundle>
     </feature>
 </features>

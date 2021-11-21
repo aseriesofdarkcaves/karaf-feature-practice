@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- TODO: how should feature versioning work - independent versions or locked with project? -->
-<feature name="bundle1" version="${bundle1.version}">
-    <feature>camel-core</feature>
-    <feature>camel-blueprint</feature>
+<features name="bundle1-${bundle1.version}" xmlns="http://karaf.apache.org/xmlns/features/v1.4.0">
+    <!-- TODO: how should feature versioning work - independent versions or locked with project? -->
+    <feature name="bundle1" version="${bundle1.version}">
+        <feature>camel-core</feature>
+        <feature>camel-blueprint</feature>
 
-    <configfile finalname="/etc/com.asodc.karaf.feature.bundle1.cfg">
-        mvn:com.asodc.karaf.feature/bundle1/${bundle1.version}/cfg/com.asodc.karaf.feature.bundle1
-    </configfile>
+        <configfile finalname="/etc/com.asodc.karaf.feature.bundle1.cfg">
+            mvn:com.asodc.karaf.feature/bundle1/${bundle1.version}/cfg/com.asodc.karaf.feature.bundle1
+        </configfile>
 
-    <bundle>mvn:com.asodc.karaf.feature/bundle1/${bundle1.version}</bundle>
-</feature>
+        <bundle>mvn:com.asodc.karaf.feature/bundle1/${bundle1.version}</bundle>
+    </feature>
+</features>
