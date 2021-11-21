@@ -3,9 +3,6 @@
     <repository>mvn:com.asodc.karaf.feature/bundle1/${bundle1.version}/xml/features</repository>
 
     <feature name="karaf-feature-practice" version="${project.version}">
-        <!-- TODO: how to reference another feature file? mvn URL? So far only internal references have worked -->
-        <!-- TODO: would using a feature repo be a way of linking? -->
-        <!-- TODO: should version info be specified here too? -->
-        <feature>bundle1</feature>
+        <feature version="${bundle1.version}">bundle1</feature>
     </feature>
 </features>
