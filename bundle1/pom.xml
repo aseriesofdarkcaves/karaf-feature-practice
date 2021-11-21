@@ -110,6 +110,11 @@
                                     <type>cfg</type>
                                     <classifier>com.asodc.karaf.feature.bundle1</classifier>
                                 </artifact>
+
+                                <artifact>
+                                    <file>target/classes/features.xml</file>
+                                    <type>xml</type>
+                                </artifact>
                             </artifacts>
                         </configuration>
                     </execution>

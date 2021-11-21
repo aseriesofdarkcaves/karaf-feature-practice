@@ -70,6 +70,7 @@
             </resource>
         </resources>
 
+        <!-- TODO: every child module has these plugins applied to them as they are not under pluginManagement - decide if this is what I want -->
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
